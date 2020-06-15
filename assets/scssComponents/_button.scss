@@ -1,0 +1,40 @@
+.small-btn {
+  padding: 2px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 50px;
+  min-width: 75px;
+}
+
+.big-btn {
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  min-width: 100px;
+  @include breakpoint-mf(md) {
+    min-width: 135px;
+  }
+}
+
+.primary-btn {
+  background-color: $color-primary;
+  border: solid 1px $color-primary;
+  color: $white;
+}
+
+.primary-btn:hover {
+  background-color: $white;
+  color: $color-primary;
+}
+
+.white-btn {
+  background-color: transparent;
+  border: solid 1px $color-primary;
+  color: $color-primary;
+}
+
+.white-btn:hover {
+  background-color: $color-primary;
+  color: $white;
+}
